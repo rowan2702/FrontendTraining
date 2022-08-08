@@ -1,10 +1,12 @@
 const HeadSection = ({
-    label
+    label,
+    button
 })=> {
     return(
         <>
         <div className="headsection">
             <h1>{label}</h1>
+            {button}
         </div>
         </>
     )
