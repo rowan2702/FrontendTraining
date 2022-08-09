@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import HeadButton from "../components/HeadButton";
 import HeadSection from "../components/HeadSection";
 import InputField from "../components/InputField";
 import InputSelect from "../components/InputSelect";
 import SideNav from "../components/SideNav"
 import TopDiv from "../components/TopDiv";
 import UploadFile from "../components/UploadFile";
-import { useCreateEmployeeMutation } from "../services/api";
 import { useGetEmployeeByIdQuery, useUpdateEmployeeByIdMutation } from "../services/api";
 
 const UpdateEmployee = () => {
@@ -35,9 +33,6 @@ const UpdateEmployee = () => {
             setState(data.data)
         }
         },[data])
-    useEffect(()=>{
-        console.log(state)
-    },[state])
 
     const [updateEmployee, result] = useUpdateEmployeeByIdMutation();
 
