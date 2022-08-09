@@ -4,6 +4,7 @@ import InputField from "../components/InputField";
 import { useLoginMutation } from "../services/api";
 import {setStorage}  from "../services/utils" 
 import logo from '../img/kv logo.png'
+import login from '../img/login.png'
 
 const Login = () => {
 
@@ -37,7 +38,7 @@ const Login = () => {
         <>
           <main className="loginmain">
             <div className="firsthalf">
-              <div></div>
+              <img src={login} />
             </div>
             <div className="secondhalf">
               <img src={logo} />

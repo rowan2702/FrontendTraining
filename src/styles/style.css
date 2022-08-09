@@ -85,10 +85,15 @@ main {
 }
 
 .topdiv {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: flex-end;
     margin: 0;
     height: 77px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
+    padding-right: 40px;
 }
 
 .headsection{
@@ -414,9 +419,9 @@ input[type="submit"] {
     width: 50%;
 }
 
-.firsthalf div {
-    width: 764px;
-    height: 764px;
+.firsthalf img {
+    width: 760px;
+    height: 760px;
     border-radius: 50%;
     background-color: #FFFFFF;
 }
@@ -506,4 +511,12 @@ input[type="submit"] {
 .detailsection div label:first-child {
     margin-bottom: 5px;
     color: #8B8D9D;
+}
+
+#logout {
+    color: #03AEEE;
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+    cursor: pointer;
 }
