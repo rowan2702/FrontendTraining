@@ -20,7 +20,7 @@ const EmployeeDetails = () => {
         <SideNav />
             <main>
                 <TopDiv />
-                <HeadSection label={'Employee Details'} button={<HeadButton label={'Edit'} hyperlink={"/details"} icon={<MdOutlineEdit className="headsectionicon" />}/>} />
+                <HeadSection label={'Employee Details'} button={<HeadButton label={'Edit'} hyperlink={`/update/${data?.data?.id}`} icon={<MdOutlineEdit className="headsectionicon" />}/>} />
                 <section className="detailsection">
                     <TextField label={'Employee Name'} value={data?.data?.name} />
                     <TextField label={'Employee ID'} value={data?.data?.id} />

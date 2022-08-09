@@ -3,8 +3,6 @@ import SideNav from "../components/SideNav"
 import Table from "../components/Table";
 import TopDiv from "../components/TopDiv";
 import '../styles/style.css'
-import details from '../dummy_data/data'
-import plus from '../img/+.svg'
 import { useGetEmployeeByNameQuery } from "../services/api";
 import HeadButton from "../components/HeadButton";
 import {MdOutlineAdd} from 'react-icons/md'
